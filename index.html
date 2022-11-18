@@ -3,12 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drag and Drop</title>
+    <title>Kanban Board by Priori</title>
     <link rel="icon" type="image/png" href="fuji.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 class="main-title">Your Personal Kanban Board</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- Backlog Column -->
+            <li class="drag-column backlog-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <!-- Backlog Content -->
+                <div id="backlog-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item">Testing!</li>
+                        <li class="drag-item">Testing!</li>
+                        <li class="drag-item">Testing!</li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </li>
+            <!-- Progress Column -->
+            <li class="drag-column progress-column">
+                <span class="header">
+                    <h1>Progress</h1>
+                </span>
+                <!-- Progress Content -->
+                <div id="progress-content" class = "custom-scroll">
+                    <ul class="drag-item-list" id="progress-list">
+                        <li class="drag-item">Testing!</li>
+                        <li class="drag-item">Testing!</li>
+                        <li class="drag-item">Testing!</li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </li>
+            <!-- Complete Column -->
+            <li class="drag-column complete-column">
+                <span class="header">
+                    <h1>Complete</h1>
+                </span>
+                <!-- Complete Content -->
+                <div id="complete-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="complete-list">
+                        <li class="drag-item">Testing!</li>
+                        <li class="drag-item">Testing!</li>
+                        <li class="drag-item">Testing!</li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </li>
+            <!-- on-hold Column -->
+            <li class="drag-column on-hold-column">
+                <span class="header">
+                    <h1>On Hold</h1>
+                </span>
+                <!-- on-hold Content -->
+                <div id="on-hold-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="on-hold-list">
+                        <li class="drag-item">Testing!</li>
+                        <li class="drag-item">Testing!</li>
+                        <li class="drag-item">Testing!</li>
+                        <li class="drag-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, ipsam! Qui necessitatibus eos illum ipsa distinctio dolorum. Fuga iure odio dolorum ipsa voluptas numquam reprehenderit nisi. Esse in dolore dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, tempora asperiores. Accusantium itaque ullam aperiam praesentium mollitia suscipit molestias deserunt sit, assumenda quae quo ipsa debitis dolore illum quas doloribus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis fuga sint ducimus reiciendis! Dicta, magnam sed iusto saepe sequi dolorem ea, illum sint, dignissimos consequatur expedita numquam nisi voluptatum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quam vel eligendi? Dolorum facilis ratione numquam corrupti, minima voluptatibus necessitatibus maiores inventore quisquam magnam reiciendis amet, ex officiis accusantium nostrum.</li>
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
