@@ -100,6 +100,15 @@ function updateDOM() {
   updateSavedColumns();
 }
 
+// Add to Column List, Reset Textbox
+function addToColumn(column){
+  const itemText = addItems[column].textContent;
+  const selectedArray = listArrays[column];
+  selectedArray.push(itemText);
+  addItems[column].textContent = '';
+  updateDOM();
+}
+
 // Show Add Item Input Bix
 function showInputBox(column){
   addBtns[column].style.visibility = 'hidden';
@@ -112,6 +121,7 @@ function hideInputBox(column){
   addBtns[column].style.visibility = 'visible';
   saveItemBtns[column].style.display = 'none';
   addItemContainers[column].style.display = 'none';
+  addToColumn(column);
 }
 
 // aLLOWS ARRAYS to reflect drag and drop items
