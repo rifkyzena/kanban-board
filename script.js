@@ -116,8 +116,8 @@ function rebuildArrays(){
   for (let i = 0; i < completeList.children.length; i++){
     completeListArray.push(completeList.children[i].textContent);
   }
+  onHoldListArray = []
   for (let i = 0; i < onHoldList.children.length; i++){
- onHoldListArray = []
     onHoldListArray.push(onHoldList.children[i].textContent);
   }
   updateDOM();
