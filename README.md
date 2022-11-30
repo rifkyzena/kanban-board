@@ -20,3 +20,5 @@ An online kanban-board on a website that helps the user to organize and remind t
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable
 - https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+Background image --> Unsplash: https://unsplash.com/photos/--kTT2VumYw
